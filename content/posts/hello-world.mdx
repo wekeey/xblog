@@ -1,0 +1,127 @@
+---
+title: "Hello World"
+description: "这是一个包含所有常见 Markdown 和 MDX 语法的示例文件。"
+date: "2025-08-21"
+tags:
+  - hello
+  - mdx
+published: true
+---
+
+## 标题
+
+# 一级标题
+
+## 二级标题
+
+### 三级标题
+
+#### 四级标题
+
+---
+
+## 列表
+
+### 无序列表
+
+- 苹果
+- 香蕉
+  - 小香蕉
+  - 大香蕉
+- 橙子
+
+### 有序列表
+
+1. 第一项
+2. 第二项
+   1. 子项一
+   2. 子项二
+3. 第三项
+
+### 任务列表
+
+- [x] 已完成
+- [ ] 待完成
+
+---
+
+## 文字样式
+
+**加粗文本**  
+_斜体文本_  
+~~删除线文本~~
+
+<u>下划线文本</u>
+[这是一个链接](https://example.com) `行内代码`
+
+---
+
+## 图片
+
+<Image
+  src="/images/hello-world/hello.jpg"
+  width="3024"
+  height="1714"
+  alt="Block preview"
+/>
+
+---
+
+## 引用
+
+> 这是一个引用块。
+>
+> 支持多行引用。
+
+---
+
+## 代码块
+
+```javascript title="JavaScript 示例"
+function hello() {
+  console.log("Hello, World!");
+}
+```
+
+```php title="PHP 示例"
+<?php
+
+class PhpVersion
+{
+    private string $version = '8.3';
+
+    public function getVersion(): string
+    {
+        return $this->version;
+    }
+
+    public function increment(): void
+    {
+        [$major, $minor] = explode('.', $this->version);
+        $minor++;
+        $this->version = "{$major}.{$minor}";
+    }
+}
+
+?>
+```
+
+```go title="Go 示例" showLineNumbers
+package main
+
+import "fmt"
+
+func main() {
+    fmt.Println("Hello, World!")
+}
+```
+
+---
+
+## 表格
+
+| 表头1 | 表头2 | 表头3 |
+| ----- | ----- | ----- |
+| 内容1 | 内容2 | 内容3 |
+| 内容4 | 内容5 | 内容6 |
+| 内容7 | 内容8 | 内容9 |
